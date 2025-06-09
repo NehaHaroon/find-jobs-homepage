@@ -94,3 +94,34 @@
     }
   }
 }
+
+.customHr {
+  border: none;
+  height: 1px;
+  background-color: var(--hr-color);
+}
+
+.calendarWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 16px 0;
+}
+.calendarInfo {
+ strong {
+    color: var(--text-color-dark);
+    font-weight: 600;
+    font-size: 16px;
+  }
+  p {
+      color: var(--text-color);
+      font-weight: 500;
+      font-size: 14px;
+  }
+}
+
+.calendarD  ropdown {
+    display: flex;
+    align-items: center;
+    padding-right: 11px;
+}
