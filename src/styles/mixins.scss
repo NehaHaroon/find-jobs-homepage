@@ -1,0 +1,13 @@
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card {
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  background-color: var(--bg-color);
+  padding: var(--card-padding);
+}

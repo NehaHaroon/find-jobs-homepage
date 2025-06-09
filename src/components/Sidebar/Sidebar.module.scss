@@ -1,0 +1,96 @@
+@import '../../styles/variables';
+@import '../../styles/responsive.scss';
+
+.sidebar {
+  width: 260px;
+  background: var(--bg-color);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  margin-bottom: 16px;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.profileCard {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profileCover {
+  height: 100px;
+  border-radius: 16px 16px 0 0;
+
+  img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+.profileInfo {
+  position: relative;
+  top: -40px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: gray;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--bg-color);
+  }
+
+  &.large {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+}
+
+.userDetails {
+  padding: 16px;
+}
+
+.userName {
+  color: var(--text-color-dark);
+  font-weight: 600;
+}
+
+.userInfo {
+  color: var(--text-color-dark);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.userLocation {
+  color: var(--text-color-light);
+  font-size: 12px;
+}
+
+.stats {
+  padding: 16px;
+  list-style: none;
+  margin-top: 20px;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 14px;
+    color: var(--text-color-dark);
+    font-weight: 500;
+
+    span {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+  }
+}
